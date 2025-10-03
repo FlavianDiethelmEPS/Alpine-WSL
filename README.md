@@ -1,7 +1,8 @@
 # Alpine-WSL
 
-An WSL distro based on Alpine Linux minirootfs.
-
+An WSL distro based on Alpine Linux minirootfs. This distribution is meant as a host for devcontainers that use Podman.
+Default user: root
+Default passwd: root
 
 ## Features
 A WSL distro for Alpine including:
