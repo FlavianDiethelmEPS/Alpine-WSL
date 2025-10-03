@@ -2,7 +2,7 @@
 This repo provides a script to build a WSL distro based on the latest Alpine Linux minirootfs. The resulting distro contains a few additional features and is intended to work as a lightweight provider for devcontainers.
 
 ## Credentials
-Default user: root
+Default user: root  
 Default passwd: root
 
 Administrative access as well as unrestricted access to the 'doas' command is granted via the 'wheel' group.
