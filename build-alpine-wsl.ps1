@@ -22,9 +22,8 @@ New-Item -ItemType Directory -Force -Path "usr/lib/wsl" | Out-Null
 Set-Location "usr/lib/wsl"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/usr/lib/wsl/icon.ico" -OutFile "icon.ico"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/usr/lib/wsl/profile.json" -OutFile "profile.json"
-Set-Location ../../..
-Compress-Archive -Path "alpine\*" -DestinationPath "Alpine.wsl"
-Set-Location ..
+Set-Location ../../../..
+Compress-Archive -Path "alpine/*" -DestinationPath "Alpine.wsl"
 Remove-Item -Recurse -Force "alpine"
 Write-Host "Done! Alpine.wsl created"
 pause
