@@ -18,8 +18,7 @@ mkdir -p usr/lib/wsl
 cd usr/lib/wsl
 wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/usr/lib/wsl/icon.ico -O icon.ico
 wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/usr/lib/wsl/profile.json -O profile.json
-cd ../../..
-tar -c * | gzip --best > ../Alpine.wsl
-cd ..
+cd ../../../..
+tar -c alpine/* | gzip --best > Alpine.wsl
 rm -rf alpine
 echo "Done! Alpine.wsl created"
