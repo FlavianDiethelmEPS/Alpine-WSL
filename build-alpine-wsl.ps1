@@ -8,7 +8,7 @@ $tarballUrl = "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_
 New-Item -ItemType Directory -Force -Path "alpine" | Out-Null
 Set-Location "alpine"
 Invoke-WebRequest -Uri $tarballUrl -OutFile $tarball
-tar -xzf $tarball
+Expand-Archive -Path $tarball -DestinationPath .
 Remove-Item $tarball
 Set-Location "etc"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/etc/wsl-distribution.conf" -OutFile "wsl-distribution.conf"
