@@ -5,8 +5,11 @@ This repo provides a script to build a WSL distro based on the latest Alpine Lin
 Default user: root
 Default passwd: root
 
+Administrative access as well as unrestricted access to the 'doas' command is granted via the 'wheel' group.
+
 ## Features
 This distro installs the following packages during the OOBE procedure:
+- doas: utility to run commands as other users
 - podman: container provider
 - podman-compose: adds the compose utility for podman
 - iptables: required by podman
