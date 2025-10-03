@@ -11,7 +11,12 @@ cd wsl
 wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/etc/wsl/system-setup.sh -O system-setup.sh
 wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/etc/wsl/system-start.sh -O system-start.sh
 chmod u+x *
-cd ../..
+cd ..
+mkdir -p /usr/lib/wsl
+cd usr/lib/wsl
+wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/usr/lib/wsl/icon.ico -O icon.ico
+wget https://raw.githubusercontent.com/FlavianDiethelmEPS/Alpine-WSL/refs/heads/main/assets/etc/wsl/profile.json -O profile.json
+cd ../../..
 tar -c * | gzip --best > ../Alpine.wsl
 cd ..
 rm -rf alpine
