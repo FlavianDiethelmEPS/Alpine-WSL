@@ -1,0 +1,34 @@
+{
+  "profiles": [
+    {
+      "antialiasingMode": "aliased",
+      "fontWeight": "bold",
+      "colorScheme": "Glacier"
+    }
+  ],
+  "schemes": [
+    {
+      "name": "Glacier",
+      "cursorColor": "#FFFFFF",
+      "foreground": "#CCCCCC",
+      "background": "#002952",
+      "selectionBackground": "#FFFFFF",
+      "black": "#0C0C0C",
+      "brightBlack": "#666666",
+      "purple": "#BC3FBC",
+      "brightPurple": "#D670D6",
+      "blue": "#2472C8",
+      "brightBlue": "#3B8EEA",
+      "cyan": "#11A8CD",
+      "brightCyan": "#29B8DB",
+      "green": "#0DBC79",
+      "brightGreen": "#23D18B",
+      "yellow": "#E5E510",
+      "brightYellow": "#F5F543",
+      "red": "#CD3131",
+      "brightRed": "#F14C4C",
+      "white": "#E5E5E5",
+      "brightWhite": "#E5E5E5"
+    }
+  ]
+}
